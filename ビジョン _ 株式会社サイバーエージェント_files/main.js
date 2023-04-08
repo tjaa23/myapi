@@ -2,8 +2,20 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 $(function(){
 	setInterval(function(){
-		const res = fetch("https://script.google.com/macros/s/AKfycbykCpiUB26_LhhRI68tixLj8fPRZVicsrT9yIbaj8-jFpCGumXljCL_pArEiJmlUy3uNw/exec");
-  		console.log(res)
+	// XMLHttpRequestオブジェクトの作成
+	var request = new XMLHttpRequest();
+
+	// URLを開く
+	request.open('GET', 'https://script.google.com/macros/s/AKfycbzoD6w0oIyJ8ubn4s_E5zRROIIo-lwznu6WTny-yLiPB5MQUaxbrsyY7B9WlWG6Xt4/exec', true);
+
+	// レスポンスが返ってきた時の処理を記述 
+	request.onload = function () {
+  		var data = this.response;
+      		console.log(data);
+	}
+
+// リクエストをURLに送信
+request.send();
 	},3000);
 });
 
