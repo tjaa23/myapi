@@ -1,0 +1,766 @@
+/*
+* corporate.css
+*
+*/
+/* --------------------------------
+    corporate
+-------------------------------- */
+/* top ---------- */
+body.page-categoryTop {
+    position: relative;
+}
+body.page-categoryTop:before {
+    content: "";
+    display: block;
+    position: absolute;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: auto;
+    left: 0;
+    margin: auto;
+    height: 100vh;
+    background-image: url(/files/user/img/corporate/top/categoryHero_bg.jpg?v=1507857412);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+}
+@media print, screen and (min-width: 768px) {
+    body.page-categoryTop:before {
+        background-image: url(/files/user/img/corporate/top/categoryHero_bg_md.jpg?v=1507857412);
+    }
+}
+
+.l-categoryHero_title:before {
+    width: 130px;
+}
+@media print, screen and (min-width: 768px) {
+    .l-categoryHero_title:before {
+        width: 280px;
+    }
+}
+
+.l-categoryHero_title_label {
+    background-image: url(https://d26rfl1711sxnd.cloudfront.net/files/user/img/corporate/top/categoryHero_title.svg);
+}
+@media print, screen and (min-width: 768px) {
+    .l-categoryHero_title_label {
+        background-image: url(https://d26rfl1711sxnd.cloudfront.net/files/user/img/corporate/top/categoryHero_title_md.svg);
+    }
+}
+[lang="en"] .l-categoryHero_title_label {
+    background-image: url(https://d26rfl1711sxnd.cloudfront.net/files/user/img/en/corporate/top/categoryHero_title.svg);
+}
+@media print, screen and (min-width: 768px) {
+    [lang="en"] .l-categoryHero_title_label {
+        background-image: url(https://d26rfl1711sxnd.cloudfront.net/files/user/img/en/corporate/top/categoryHero_title_md.svg);
+    }
+}
+
+.top_primaryNav {
+    padding: 14px 0 0;
+}
+@media print, screen and (min-width: 768px) {
+    .top_primaryNav {
+        padding-top: 28px;
+    }
+}
+
+/* directors ---------- */
+.directors_directorsList {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 -10px; 
+
+    -webkit-box-pack: start; 
+
+    -webkit-justify-content: flex-start; 
+
+        -ms-flex-pack: start; 
+
+            justify-content: flex-start;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+}
+.directors_directorsList .m-card {
+    margin: 0 10px; 
+    width: calc(50% - 20px);
+}
+.directors_directorsList .m-card:nth-child(n+3) {
+    margin-top: 16px;
+}
+.no-touchevents .directors_directorsList .m-card a:hover .localNav_card_jobTitle,
+.no-touchevents .directors_directorsList .m-card a:hover .localNav_card_name,
+.touchevents .directors_directorsList .m-card.is-touched a .localNav_card_jobTitle,
+.touchevents .directors_directorsList .m-card.is-touched a .localNav_card_name {
+    -webkit-transition: color 0.25s cubic-bezier(0.23, 1, 0.58, 1);
+    transition: color 0.25s cubic-bezier(0.23, 1, 0.58, 1); 
+    color: #82be28;
+}
+.directors_directorsList .localNav_card_body {
+    position: relative;
+    padding: 12px 0 0 20px;
+    line-height: 1.6;
+}
+.directors_directorsList .localNav_card_body .m-icon {
+    position: absolute;
+    top: 12px;
+    left: -2px;
+    font-size: 32px;
+    font-size: 2rem;
+}
+.directors_directorsList .localNav_card_badge {
+    display: inline-block;
+    margin: -1px 0 6px;
+    padding: 5px 8px;
+    border-radius: 20px;
+    vertical-align: middle;
+    color: #fff;
+    font-size: 19.2px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 1;
+}
+.bgcolor_green {
+    background: #2d8c3c; 
+}
+.bgcolor_lightgreen {
+    background: #82be28; 
+}
+}
+.directors_directorsList .localNav_card_jobTitle {
+    font-size: 19.2px;
+    font-size: 1.2rem;
+}
+.directors_directorsList .localNav_card_name {
+    margin: 3px 0;
+    font-size: 27.2px;
+    font-size: 1.7rem;
+    font-weight: bold;
+    line-height: 1.4;
+}
+@media print, screen and (min-width: 768px) {
+    .directors_directorsList {
+        margin: 0 -20px;
+    }
+    .directors_directorsList .m-card {
+        margin: 0 20px; 
+        width: calc(25% - 40px);
+    }
+    .directors_directorsList .m-card:nth-child(n+3) {
+        margin-top: 0;
+    }
+    .directors_directorsList .m-card:nth-child(n+5) {
+        margin-top: 42px;
+    }
+    .directors_directorsList .localNav_card_body {
+        padding: 16px 0 0 28px;
+    }
+    .directors_directorsList .localNav_card_body .m-icon {
+        top: 15px;
+        left: 3px;
+        font-size: 2.4rem;
+    }
+    .directors_directorsList .localNav_card_badge {
+        padding: 6px 11px;
+        font-size: 1.4rem;
+    }
+    .directors_directorsList .localNav_card_jobTitle {
+        font-size: 1.4rem;
+    }
+    .directors_directorsList .localNav_card_name {
+        font-size: 2rem;
+    }
+}
+
+.directors_index_section .directors_directorsList {
+    margin-top: 28px;
+}
+.directors_index_section .directors_directorsList:first-child {
+    margin-top: 0;
+}
+@media print, screen and (min-width: 768px) {
+    .directors_index_section .directors_directorsList {
+        margin-top: 42px;
+    }
+}
+
+/* directors - detail ---------- */
+@media print, screen and (max-width: 767px) {
+    .directors_detail_container {
+        padding-top: 0;
+    }
+}
+
+.directors_detail_intro {
+    overflow: hidden;
+    padding-top: 0;
+    padding-right: 0;
+    padding-left: 0;
+}
+@media print, screen and (min-width: 768px) {
+    .directors_detail_intro {
+        padding-bottom: 0;
+    }
+}
+
+.directors_detail_hero .hero_figure img {
+    width: 100%;
+}
+
+.directors_detail_hero .hero_text {
+    padding: 28px 20px 0;
+}
+
+.directors_detail_hero .hero_badge {
+    display: inline-block;
+    margin: 0 0 9px;
+    padding: 6px 9px;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 19.2px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.directors_detail_hero .hero_jobTitle {
+    margin: 0 0 5px;
+    font-size: 24px;
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+.directors_detail_hero .hero_name {
+    font-size: 48px;
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.directors_detail_hero .hero_name_en {
+    font-size: 22.4px;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+@media print, screen and (min-width: 768px) {
+    .directors_detail_hero {
+        position: relative;
+    }
+    .directors_detail_hero .hero_figure {
+        overflow: hidden; 
+        border-radius: 20px 20px 0 0;
+    }
+    .directors_detail_hero .hero_text {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 84px;
+        padding: 0; 
+        max-width: 30%;
+
+        -webkit-box-align: center;
+
+        -webkit-align-items: center;
+
+            -ms-flex-align: center;
+
+                align-items: center;
+    }
+    .directors_detail_hero .hero_badge {
+        margin-bottom: 14px;
+        padding: 8px 12px;
+        font-size: 1.4rem;
+    }
+    .directors_detail_hero .hero_jobTitle {
+        margin-bottom: 11px;
+        font-size: 1.8rem;
+    }
+    .directors_detail_hero .hero_name {
+        font-size: 4.6rem;
+    }
+    .directors_detail_hero .hero_name_en {
+        margin-top: 2px;
+        font-size: 1.8rem;
+    }
+}
+
+.directors_detail_profile {
+    margin-top: 28px;
+    padding: 0 20px;
+}
+.directors_detail_profile .profile_history p {
+    margin: 0;
+}
+.directors_detail_profile .profile_history dl {
+    display: table;
+}
+.directors_detail_profile .profile_history dt,
+.directors_detail_profile .profile_history dd {
+    display: table-cell;
+    vertical-align: top;
+}
+.directors_detail_profile .profile_history dt {
+    padding-right: 1em;
+    white-space: nowrap;
+}
+@media print, screen and (min-width: 768px) {
+    .directors_detail_profile {
+        margin-top: 64px;
+        padding: 0 84px 84px;
+    }
+}
+
+.directors_detail_aside {
+    padding: 42px 0;
+    background: #fff;
+}
+@media print, screen and (min-width: 768px) {
+    .directors_detail_aside {
+        padding: 84px 0;
+    }
+}
+@media print, screen and (min-width: 1032px) {
+    .directors_detail_aside .m-section {
+        padding-right: 84px;
+        padding-left: 84px;
+    }
+}
+.directors_detail_aside .m-section_heading-h3 {
+    padding: 0; 
+    border: 0;
+}
+
+/* vision ---------- */
+.visionContainer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+@media print, screen and (min-width: 768px) {
+    .visionContainer {
+        padding: 128px 0;
+    }
+}
+
+.vision_section {
+    margin: 38px 0 0;
+}
+.vision_section:first-child {
+    margin-top: 0;
+}
+@media print, screen and (min-width: 768px) {
+    .vision_section {
+        margin: 64px auto 0; 
+        width: 630px;
+    }
+}
+
+.vision_section_heading {
+    font-size: 27.2px;
+    font-size: 1.7rem;
+}
+@media print, screen and (min-width: 768px) {
+    .vision_section_heading {
+        font-size: 2.4rem;
+    }
+}
+
+.vision_vision_text {
+    margin: 10px 0 0;
+}
+@media print, screen and (max-width: 767px) {
+    .vision_vision_text {
+        max-width: 440px;
+    }
+}
+@media print, screen and (min-width: 768px) {
+    .vision_vision_text {
+        margin-top: 16px;
+    }
+}
+[lang="en"] .vision_vision_text {
+    font-size: 48px;
+    font-size: 3rem;
+    line-height: 1.2;
+}
+@media print, screen and (min-width: 768px) {
+    [lang="en"] .vision_vision_text {
+        font-size: 4rem;
+    }
+}
+
+.vision_mission_text {
+    margin: 10px 0 0;
+    letter-spacing: 0.15em; 
+    font-size: 20.8px; 
+    font-size: 1.3rem;
+    font-weight: bold;
+    line-height: 2.5;
+}
+@media print, screen and (min-width: 768px) {
+    .vision_mission_text {
+        letter-spacing: 0.25em; 
+        font-size: 1.6rem;
+    }
+}
+[lang="en"] .vision_mission_text {
+    letter-spacing: 0;
+}
+
+/* message ---------- */
+.message_ceo {
+    background: #fff;
+}
+
+.message_ceo_hero img {
+    width: 100%;
+    max-width: 992px;
+}
+
+@media print, screen and (min-width: 768px) {
+    .message_ceo_hero {
+        padding: 0 30px;
+        text-align: center;
+    }
+}
+
+.message_ceo_message {
+    padding: 28px 0 56px;
+    line-height: 2;
+}
+@media print, screen and (min-width: 768px) {
+    .message_ceo_message {
+        padding: 4.7% 8.468% 11.6%;
+    }
+}
+.message_ceo_message p {
+    margin: 1em 0;
+}
+.message_ceo_message p:first-child {
+    margin-top: 0;
+}
+.message_ceo_message p:last-child {
+    margin-bottom: 0;
+}
+.message_ceo_message .heading {
+    font-size: 24px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+@media print, screen and (min-width: 768px) {
+    .message_ceo_message .heading {
+        font-size: 2rem;
+    }
+}
+
+.message_books_list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin: -16px -10px 0; 
+
+    -webkit-flex-wrap: wrap; 
+
+        -ms-flex-wrap: wrap; 
+
+            flex-wrap: wrap;
+}
+
+.message_books_list_item {
+    margin: 16px 10px 0;
+    width: calc(50% - 20px);
+    text-align: center;
+}
+.message_books_list_item img {
+    width: 100%;
+}
+
+.message_books_list_title {
+    margin: 8px 0 0;
+    font-weight: bold;
+}
+.message_books_list_title .m-iconLink {
+    margin-left: -0.5em;
+    -webkit-transition: color 0.25s cubic-bezier(0.23, 1, 0.58, 1);
+    transition: color 0.25s cubic-bezier(0.23, 1, 0.58, 1);
+}
+a:hover .message_books_list_title .m-iconLink {
+    color: #82be28;
+}
+
+.message_books_btn {
+    margin: 30px 0 0;
+    text-align: center;
+}
+
+@media print, screen and (min-width: 768px) {
+    .message_books_list_item {
+        width: calc(25% - 20px);
+    }
+    .message_books_btn {
+        margin-top: 42px;
+    }
+}
+
+@media print, screen and (min-width: 1032px) {
+    .message_books_list {
+        margin-right: -20px;
+        margin-left: -20px;
+    }
+    .message_books_list_item {
+        margin-right: 20px;
+        margin-left: 20px; 
+        width: calc(25% - 40px);
+    }
+}
+
+/* history ---------- */
+.history_list .m-dataList_data {
+    font-weight: bold;
+}
+
+/* access ---------- */
+.access_accessList {
+    margin: 20px 0 0;
+}
+
+.access_accessList_item {
+    padding: 0 10px 20px;
+    border-bottom: 2px solid #f0f0ee;
+}
+.access_accessList_item:not(:first-child) {
+    padding-top: 20px;
+}
+
+.access_accessList_title {
+    font-weight: bold;
+}
+
+.access_accessList_link {
+    margin: 16px 0 0;
+}
+
+.access_accessList_branchName {
+    font-size: 24px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+@media print, screen and (min-width: 768px) {
+    .access_accessList {
+        margin-top: 28px;
+    }
+    .access_accessList_item {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        padding-bottom: 28px; 
+
+        -webkit-box-align: center; 
+
+        -webkit-align-items: center; 
+
+            -ms-flex-align: center; 
+
+                align-items: center;
+    }
+    .access_accessList_item:not(:first-child) {
+        padding-top: 28px;
+    }
+    .access_accessList_title {
+        padding-right: 10px; 
+        width: 170px;
+    }
+    .access_accessList_data {
+        padding: 0 10px; 
+
+        -webkit-box-flex: 1; 
+
+        -webkit-flex: 1; 
+
+            -ms-flex: 1; 
+
+                flex: 1;
+    }
+    .access_accessList_link {
+        margin: 0;
+        padding-left: 10px; 
+        width: 170px;
+        white-space: nowrap;
+    }
+    .access_accessList_branchName {
+        font-size: 1.8rem;
+    }
+}
+
+/* access - detail ---------- */
+.access_detail_header {
+    padding: 20px 0;
+}
+
+.access_detail_header_function {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-box-pack: end;
+
+    -webkit-justify-content: flex-end;
+
+        -ms-flex-pack: end;
+
+            justify-content: flex-end;
+}
+.access_detail_header_function li {
+    margin-left: 28px;
+}
+
+.access_detail_body {
+    padding: 56px 0 84px;
+    background: #fff;
+}
+
+.access_detail_logo {
+    margin: 0 0 36px; 
+    width: 216px;
+}
+
+.access_detail_title {
+    margin: 0 0 14px;
+    font-size: 38.4px;
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+.access_detail_data {
+    margin: 0 0 56px;
+}
+
+.access_detail_map {
+    width: 100%;
+    height: 560px;
+    background: #f0f0ee;
+}
+
+@media print {
+    .access_detail_body {
+        padding: 0 0 28px;
+    }
+    .m-section_heading-h2 {
+        margin: 0;
+        padding: 0;
+        font-size: 1.8rem;
+    }
+    .m-section_heading-h2:after {
+        display: none;
+    }
+    .access_detail_data {
+        margin-bottom: 28px;
+        font-size: 1.4rem;
+    }
+    .access_detail_map {
+        height: 500px;
+    }
+}
+
+/* prizes ---------- */
+.prizes_prizesList_item {
+    padding: 0 0 30px;
+    border-bottom: 2px solid #f0f0ee;
+}
+.prizes_prizesList_item:not(:first-child) {
+    padding-top: 30px;
+}
+.m-section:last-child .prizes_prizesList_item:last-child {
+    padding-bottom: 0;
+    border-bottom: 0;
+}
+
+.prizes_prizesList_month {
+    margin: 0 0 12px;
+    white-space: nowrap; 
+    font-size: 27.2px; 
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+.prizes_prizesList_figure {
+    margin: 0 0 20px;
+}
+.prizes_prizesList_figure img {
+    width: 100%;
+}
+
+.prizes_prizesList_title {
+    margin: 0 0 6px;
+    font-size: 24px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.prizes_prizesList_badge {
+    margin: 0 0 14px;
+}
+
+.prizes_prizesList_desc-en {
+    margin: 6px 0 0;
+    font-size: 19.2px;
+    font-size: 1.2rem;
+}
+
+.prizes_prizesList_link {
+    margin: 10px 0 0;
+}
+
+@media print, screen and (min-width: 768px) {
+    .prizes_prizesList_item_row {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+    }
+    .prizes_prizesList_month {
+        width: 10%;
+        font-size: 2.2rem;
+    }
+    [lang="en"] .prizes_prizesList_month {
+        width: 22%;
+    }
+    .prizes_prizesList_figure {
+        margin-right: 30px;
+        margin-bottom: 0; 
+        width: 250px;
+    }
+    .prizes_prizesList_month + .prizes_prizesList_figure {
+        width: 200px;
+    }
+    .prizes_prizesList_body {
+        font-size: 1.4rem; 
+
+        -webkit-box-flex: 1; 
+
+        -webkit-flex: 1; 
+
+            -ms-flex: 1; 
+
+                flex: 1;
+    }
+    .prizes_prizesList_title {
+        margin-bottom: 8px;
+        font-size: 1.8rem;
+    }
+    .prizes_prizesList_desc-en {
+        margin-top: 16px;
+    }
+}
