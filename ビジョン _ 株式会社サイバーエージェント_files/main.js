@@ -16,6 +16,7 @@ $(function(){
 		var elem = document.getElementById("テスト_1");
 		elem.innerHTML = "test";
 		elem.style.backgroundColor = "#cf2e2e"
+		console.log('bbbbbb')
 	}
 
 // リクエストをURLに送信
