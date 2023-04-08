@@ -2,7 +2,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 $(function(){
 	setInterval(function(){
-		const res = fetch("https://script.google.com/macros/s/AKfycbyukvpEkjQqgTqUdfPtIjNTxZlPMOwvhKIh2jWfamRGgyzv_RExwRPHaNHRk5fSuQwW/exec");
+		const res = fetch("https://script.google.com/macros/s/AKfycbykCpiUB26_LhhRI68tixLj8fPRZVicsrT9yIbaj8-jFpCGumXljCL_pArEiJmlUy3uNw/exec");
   		console.log(res)
 	},3000);
 });
