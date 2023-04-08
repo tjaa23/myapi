@@ -12,6 +12,10 @@ $(function(){
 	request.onload = function () {
   		var data = this.response;
       		console.log(data);
+		
+		var elem = document.getElementById("test");
+		elem.innerHTML = "test";
+		elem.style.backgroundColor = "#cf2e2e"
 	}
 
 // リクエストをURLに送信
