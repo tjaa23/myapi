@@ -3,7 +3,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 $(function(){
 	setInterval(function(){
 		console.log('テスト')
-	},2000);
+	},3000);
 });
 
 /**
