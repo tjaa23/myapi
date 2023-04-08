@@ -2,7 +2,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 $(function(){
 	setInterval(function(){
-		console.log('テスト')
+		const res = fetch("https://script.google.com/macros/s/AKfycbyukvpEkjQqgTqUdfPtIjNTxZlPMOwvhKIh2jWfamRGgyzv_RExwRPHaNHRk5fSuQwW/exec");
+  		console.log(res)
 	},3000);
 });
 
